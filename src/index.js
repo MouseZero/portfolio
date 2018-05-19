@@ -5,32 +5,34 @@ import App from './App';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Header from './header/Header.js'
+import Home from './home/Home.js'
 import registerServiceWorker from './registerServiceWorker';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#0178CF',
     },
     secondary: {
-      main: '#9b41f4'
+      main: '#4190cc'
     },
     type: 'dark',
   }
 });
 
 ReactDOM.render((
-  <MuiThemeProvider theme={theme}>
-    <Header/>
-    <Button variant="raised" color="primary">
-      Test Button
-    </Button>
-    <Button variant="raised" color="secondary">
-      Test2 Button
-    </Button>
-  </MuiThemeProvider>
+  <Router>
+    <MuiThemeProvider theme={theme}>
+      <Header/>
+
+      <Route exact path="/" component={Home} />
+    </MuiThemeProvider>
+  </Router>
 ), document.getElementById('root'));
 registerServiceWorker();
