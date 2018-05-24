@@ -36,9 +36,12 @@ class Header extends React.Component {
             textColor="secondary"
             onChange={this.handleChange}
           >
-            <Tab label="Active" />
-            <Tab label="Disabled" disabled />
-            <Tab label="Active" />
+            <Tab label="Cover" />
+            <Tab label="Experiance" />
+            <Tab label="Portfolio" />
+            <Tab label="Skills" />
+            <Tab label="About"/>
+            <Tab label="Contact" />
           </Tabs>
         </Paper>
       </div>
