@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from './partials/Section'
+import Section from './partials/Section.jsx'
 import image from '../images/title-backgrounds/glasses.jpg'
 import image_wide from '../images/title-backgrounds/glasses_wide.jpg'
 import {isWideImageFormat} from '../util/screen'

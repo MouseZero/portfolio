@@ -1,12 +1,12 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
 
-import Cover from './Cover'
-import Experience from './Experience'
-import Portfolio from './Portfolio'
-import Skills from './Skills'
-import About from './About'
-import Contact from './Contact'
+import Cover from './Cover.jsx'
+import Experience from './Experience.jsx'
+import Portfolio from './Portfolio.jsx'
+import Skills from './Skills.jsx'
+import About from './About.jsx'
+import Contact from './Contact.jsx'
 
 function Home() {
   return (

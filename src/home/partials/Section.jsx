@@ -3,10 +3,15 @@ import Parallax from './Parallax'
 
 const style = {
   content: {
-    margin: "20px 0 20px 0"
+    margin: "2rem",
+    display: "flex",
+    "align-items": "center",
+    "justify-content": "center",
+    "min-height": "75vh",
+    "font-size": "3vw"
   },
   section: {
-    "min-height": "100vh"
+    "min-height": "75"
   },
   title: {
     "height": "25vw",
@@ -14,6 +19,9 @@ const style = {
     "align-items": "center",
     "justify-content": "center",
     "text-shadow": "0px 0px 4px #000"
+  },
+  h2: {
+    "font-size": "5vw"
   }
 }
 
@@ -25,7 +33,7 @@ function Section({image, title, children}) {
         bgImage={image}
       >
         <div style={style.title}>
-          <h2>{title}</h2>
+          <h2 style={style.h2}>{title}</h2>
         </div>
       </Parallax>
       <div style={style.content}>

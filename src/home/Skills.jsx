@@ -1,11 +1,11 @@
 import React from 'react'
-import Section from './partials/Section'
-import image from '../images/title-backgrounds/laptop.jpg'
+import Section from './partials/Section.jsx'
+import image from '../images/title-backgrounds/books.jpg'
 
 function Component(props) {
   return (
     <Section
-      title="Frontend React Developer"
+      title="Skills"
       image={image}
     >
     Some content

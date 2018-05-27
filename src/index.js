@@ -5,7 +5,7 @@ import App from './App';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
 import Header from './header/Header.js'
-import Home from './home/Home.js'
+import Home from './home/Home.jsx'
 import registerServiceWorker from './registerServiceWorker';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
