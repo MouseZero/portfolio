@@ -1,5 +1,6 @@
 import React from 'react'
 import Parallax from './Parallax'
+import screen from '../../util/screen'
 
 const style = {
   content: {
@@ -7,8 +8,7 @@ const style = {
     display: "flex",
     "align-items": "center",
     "justify-content": "center",
-    "margin": "4vh",
-    "font-size": "3vw"
+    "margin": "2rem",
   },
   section: {
   },
@@ -24,8 +24,7 @@ const style = {
   }
 }
 
-function Section({image, title, children}) {
-  console.log(image)
+function Section({image, title, children, isMobile}) {
   return (
     <div style={style.section}>
       <Parallax

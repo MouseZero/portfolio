@@ -17,6 +17,7 @@ function Component(props) {
     <Section
       title="Frontend React Developer"
       image={image}
+      isMobile={props.isMobile}
     >
       <div style={style.content}>
         <Point>

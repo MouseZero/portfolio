@@ -30,7 +30,6 @@ ReactDOM.render((
   <Router>
     <MuiThemeProvider theme={theme}>
       <Header/>
-
       <Route exact path="/" component={Home} />
     </MuiThemeProvider>
   </Router>

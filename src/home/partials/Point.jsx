@@ -11,8 +11,6 @@ function Point(props) {
     <div style={style.point}>
       <i class="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>
       { props.children }
-      &nbsp;&nbsp;
-      <i class="fas fa-angle-left fa-sm"></i>
     </div>
   )
 }

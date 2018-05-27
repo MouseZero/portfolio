@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './partials/Section.jsx'
-import MediaCardProject from './partials/MediaCardProject.jsx'
+import MediaCard from './partials/MediaCard.jsx'
 import image from '../images/title-backgrounds/portfolio.jpg'
 import billo from '../images/project-thumbs/thumb-billo.png'
 import calc from '../images/project-thumbs/thumb-calc.png'
@@ -25,35 +25,41 @@ function Component(props) {
       image={image}
     >
       <div style={style.container}>
-        <MediaCardProject
+        <MediaCard
           image={billo}
           title="Billo's Adventure"
           content="Android Game"
+          isMobile={props.isMobile}
         />
-        <MediaCardProject
+        <MediaCard
           image={voting}
           title="Voting App"
           content="React, Redux, Node, PostgreSQL, Express"
+          isMobile={props.isMobile}
         />
-        <MediaCardProject
+        <MediaCard
           image={life}
           title="Game Of Life"
           content="React JS"
+          isMobile={props.isMobile}
         />
-        <MediaCardProject
+        <MediaCard
           image={crawler}
           title="Dungeon Crawler"
           content="React JS, Responsive Design"
+          isMobile={props.isMobile}
         />
-        <MediaCardProject
+        <MediaCard
           image={simon}
           title="Simon"
           content="HTML5 Canvas, Responsive Design"
+          isMobile={props.isMobile}
         />
-        <MediaCardProject
+        <MediaCard
           image={recipe}
           title="Recipe Box"
           content="React JS, Responsive Design"
+          isMobile={props.isMobile}
         />
       </div>
     </Section>
