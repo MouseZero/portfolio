@@ -7,11 +7,10 @@ const style = {
     display: "flex",
     "align-items": "center",
     "justify-content": "center",
-    "min-height": "75vh",
+    "margin": "4vh",
     "font-size": "3vw"
   },
   section: {
-    "min-height": "75"
   },
   title: {
     "height": "25vw",
