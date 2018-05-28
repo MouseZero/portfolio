@@ -11,10 +11,10 @@ import Header from '../header/Header.js'
 
 const style = {
   general: {
-    "font-size": "2rem"
+    "fontSize": "2rem"
   },
   buffer: {
-    "height": "112px"
+    "height": "100px"
   }
 }
 
@@ -47,18 +47,20 @@ class Home extends React.Component {
     const isMobile = this.state.windowDimensions.width <= 768
     if (isMobile) {
       style.general = Object.assign({}, style.general, {
-        "font-size": "14px"
+        "fontSize": "14px"
       })
     } else {
       style.general = Object.assign({}, style.general, {
-        "font-size": "24px"
+        "fontSize": "24px"
       })
     }
     return (
       <div style={style.general}>
         <Header/>
         <div style={style.buffer}/>
-        <Cover isMobile={isMobile}/>
+        <Cover
+          isMobile={isMobile}
+        />
         <Experience/>
         <Portfolio
           isMobile={isMobile}

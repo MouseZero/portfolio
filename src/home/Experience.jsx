@@ -5,16 +5,17 @@ import image from '../images/title-backgrounds/code.png'
 const style = {
   dates: {
     color: "#999",
-    "font-size": "2vw"
+    "fontSize": "2vw"
   },
   title: {
-    "font-weight": "bold"
+    "fontWeight": "bold"
   }
 }
 
 function Component(props) {
   return (
     <Section
+      id="Experience"
       title="Experience"
       image={image}
     >

@@ -3,7 +3,6 @@ import Section from './partials/Section.jsx'
 import MediaCard from './partials/MediaCard.jsx'
 import image from '../images/title-backgrounds/portfolio.jpg'
 import billo from '../images/project-thumbs/thumb-billo.png'
-import calc from '../images/project-thumbs/thumb-calc.png'
 import voting from '../images/project-thumbs/thumb-voting.png'
 import life from '../images/project-thumbs/thumb-life.png'
 import simon from '../images/project-thumbs/thumb-simon.png'
@@ -13,14 +12,15 @@ import recipe from '../images/project-thumbs/thumb-recipe.png'
 const style = {
   container: {
     "display": "flex",
-    "flex-wrap": "wrap",
-    "justify-content": "center"
+    "flexWrap": "wrap",
+    "justifyContent": "center"
   }
 }
 
 function Component(props) {
   return (
     <Section
+      idname="Portfolio"
       title="Portfolio"
       image={image}
     >

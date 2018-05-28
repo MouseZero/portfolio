@@ -5,6 +5,7 @@ import image from '../images/title-backgrounds/books.jpg'
 function Component(props) {
   return (
     <Section
+      id="skills"
       title="Skills"
       image={image}
     >

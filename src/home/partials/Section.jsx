@@ -1,13 +1,11 @@
 import React from 'react'
 import Parallax from './Parallax'
-import screen from '../../util/screen'
 
 const style = {
   content: {
-    margin: "2rem",
     display: "flex",
-    "align-items": "center",
-    "justify-content": "center",
+    "alignItems": "center",
+    "justifyContent": "center",
     "margin": "2rem",
   },
   section: {
@@ -15,18 +13,18 @@ const style = {
   title: {
     "height": "25vw",
     "display": "flex",
-    "align-items": "center",
-    "justify-content": "center",
-    "text-shadow": "0px 0px 4px #000"
+    "alignItems": "center",
+    "justifyContent": "center",
+    "textShadow": "0px 0px 4px #000"
   },
   h2: {
-    "font-size": "5vw"
+    "fontSize": "5vw"
   }
 }
 
-function Section({image, title, children, isMobile}) {
+function Section({id, image, title, children, isMobile}) {
   return (
-    <div style={style.section}>
+    <div id={id} style={style.section}>
       <Parallax
         bgImage={image}
       >

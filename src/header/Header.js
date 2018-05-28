@@ -1,20 +1,18 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 import Typography from '@material-ui/core/Typography';
 
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { withRouter } from 'react-router-dom'
 
 const style = {
   content: {
     "position": "fixed",
     "top": "0",
-    "z-index": "30",
-    "overflow": "hidden",
+    "zIndex": "30",
     "width": "100%"
   },
   tabs: {
@@ -48,10 +46,15 @@ class Header extends React.Component {
             textColor="secondary"
             onChange={this.handleChange}
           >
-            <Tab label="Cover" />
+            <Tab
+              label="Cover"
+            />
             <Tab label="Experiance" />
             <Tab label="Portfolio" />
-            <Tab label="Skills" />
+            <Tab
+              label="Skills"
+              buttonRef={() => console.log('called')}
+            />
             <Tab label="About"/>
             <Tab label="Contact" />
           </Tabs>
@@ -61,4 +64,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default withRouter(Header)

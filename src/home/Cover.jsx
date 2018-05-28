@@ -6,15 +6,16 @@ import Point from './partials/Point.jsx'
 const style = {
   content: {
     display: "flex",
-    "flex-direction": "column",
-    "align-items": "center",
-    "justify-content": "space-around",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "space-around",
   }
 }
 
 function Component(props) {
   return (
     <Section
+      id="Cover"
       title="Frontend React Developer"
       image={image}
       isMobile={props.isMobile}
