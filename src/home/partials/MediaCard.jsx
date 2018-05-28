@@ -13,8 +13,8 @@ function Component({title, image, content, children, imageProps, cardProps, isMo
       },
       image: {
         width: "100px",
-        "max-height": "100px",
-        "min-height": "100px",
+        "maxHeight": "100px",
+        "minHeight": "100px",
         "flex": "1"
       },
       title: {
@@ -27,11 +27,11 @@ function Component({title, image, content, children, imageProps, cardProps, isMo
         "flex": "20"
       },
       content: {
-        "min-width": "90vw",
+        "minWidth": "90vw",
         "margin": "2rem 1rem 2rem 1rem"
       },
       action: {
-        "min-width": "90vw",
+        "minWidth": "90vw",
       }
     }
   } else {
