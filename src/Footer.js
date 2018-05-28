@@ -33,14 +33,15 @@ class Header extends React.Component {
             indicatorColor="secondary"
             textColor="secondary"
             onChange={this.handleChange}
+            centered
           >
             <Tab
               label="Cover"
-              href="#cover"
+              href="#appBar"
             />
             <Tab
               label="Experiance"
-              href="#experiance"
+              href="#experience"
             />
             <Tab
               label="Portfolio"

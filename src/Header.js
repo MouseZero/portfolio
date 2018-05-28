@@ -5,13 +5,15 @@ import Typography from '@material-ui/core/Typography';
 
 function Component() {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="title" color="inherit">
-          Russell Murray
-        </Typography>
-      </Toolbar>
-    </AppBar>
+    <div id="appBar">
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="title" color="inherit">
+            Russell Murray
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
   )
 }
 
