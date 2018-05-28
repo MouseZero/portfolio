@@ -5,7 +5,7 @@ import image from '../images/title-backgrounds/phone.jpg'
 function Component(props) {
   return (
     <Section
-      id="Contact"
+      id="contact"
       title="Contact"
       image={image}
     >

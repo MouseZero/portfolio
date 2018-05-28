@@ -20,7 +20,7 @@ const style = {
 function Component(props) {
   return (
     <Section
-      idname="Portfolio"
+      id="portfolio"
       title="Portfolio"
       image={image}
     >

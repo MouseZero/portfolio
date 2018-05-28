@@ -8,7 +8,7 @@ function Component(props) {
   const imageToUse = isWideImageFormat ? image_wide : image
   return (
     <Section
-      id="About"
+      id="about"
       title="About"
       image={imageToUse}
     >

@@ -15,7 +15,7 @@ const style = {
 function Component(props) {
   return (
     <Section
-      id="Cover"
+      id="cover"
       title="Frontend React Developer"
       image={image}
       isMobile={props.isMobile}

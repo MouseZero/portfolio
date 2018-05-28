@@ -1,8 +1,4 @@
 import React from 'react'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography';
-
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -11,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 const style = {
   content: {
     "position": "fixed",
-    "top": "0",
+    "bottom": "0",
     "zIndex": "30",
     "width": "100%"
   },
@@ -31,14 +27,6 @@ class Header extends React.Component {
   render() {
     return (
       <div style={style.content}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="title" color="inherit">
-              Russell Murray
-            </Typography>
-          </Toolbar>
-        </AppBar>
-
         <Paper style={style.tabs}>
           <Tabs
             value={this.state.value}
@@ -48,15 +36,28 @@ class Header extends React.Component {
           >
             <Tab
               label="Cover"
+              href="#cover"
             />
-            <Tab label="Experiance" />
-            <Tab label="Portfolio" />
+            <Tab
+              label="Experiance"
+              href="#experiance"
+            />
+            <Tab
+              label="Portfolio"
+              href="#portfolio"
+            />
             <Tab
               label="Skills"
-              buttonRef={() => console.log('called')}
+              href="#skills"
             />
-            <Tab label="About"/>
-            <Tab label="Contact" />
+            <Tab
+              label="About"
+              href="#about"
+            />
+            <Tab
+              label="Contact"
+              href="#contact"
+            />
           </Tabs>
         </Paper>
       </div>

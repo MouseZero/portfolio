@@ -7,7 +7,8 @@ import Portfolio from './Portfolio.jsx'
 import Skills from './Skills.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
-import Header from '../header/Header.js'
+import Footer from '../Footer.js'
+import Header from '../Header.js'
 
 const style = {
   general: {
@@ -57,7 +58,6 @@ class Home extends React.Component {
     return (
       <div style={style.general}>
         <Header/>
-        <div style={style.buffer}/>
         <Cover
           isMobile={isMobile}
         />
@@ -74,6 +74,8 @@ class Home extends React.Component {
         <Button variant="raised" color="secondary">
           Test2 Button
         </Button>
+        <div style={style.buffer}/>
+        <Footer/>
       </div>
     )
   }
