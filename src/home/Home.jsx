@@ -7,10 +7,14 @@ import Portfolio from './Portfolio.jsx'
 import Skills from './Skills.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
+import Header from '../header/Header.js'
 
 const style = {
   general: {
     "font-size": "2rem"
+  },
+  buffer: {
+    "height": "112px"
   }
 }
 
@@ -52,6 +56,8 @@ class Home extends React.Component {
     }
     return (
       <div style={style.general}>
+        <Header/>
+        <div style={style.buffer}/>
         <Cover isMobile={isMobile}/>
         <Experience/>
         <Portfolio

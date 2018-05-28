@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar'
-import Header from './header/Header.js'
 import Home from './home/Home.jsx'
 import registerServiceWorker from './registerServiceWorker';
 
@@ -29,7 +28,6 @@ const theme = createMuiTheme({
 ReactDOM.render((
   <Router>
     <MuiThemeProvider theme={theme}>
-      <Header/>
       <Route exact path="/" component={Home} />
     </MuiThemeProvider>
   </Router>

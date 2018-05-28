@@ -9,6 +9,18 @@ import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
+const style = {
+  content: {
+    "position": "fixed",
+    "top": "0",
+    "z-index": "30",
+    "overflow": "hidden",
+    "width": "100%"
+  },
+  tabs: {
+  }
+}
+
 class Header extends React.Component {
   state = {
     value: 2,
@@ -20,16 +32,16 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={style.content}>
         <AppBar position="static">
           <Toolbar>
             <Typography variant="title" color="inherit">
-                Russell Murray
-              </Typography>
+              Russell Murray
+            </Typography>
           </Toolbar>
         </AppBar>
 
-        <Paper>
+        <Paper style={style.tabs}>
           <Tabs
             value={this.state.value}
             indicatorColor="secondary"
