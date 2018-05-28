@@ -7,7 +7,7 @@ import Portfolio from './Portfolio.jsx'
 import Skills from './Skills.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
-import Footer from '../Footer.js'
+import Nav from '../Nav.js'
 import Header from '../Header.js'
 
 const style = {
@@ -75,7 +75,9 @@ class Home extends React.Component {
           Test2 Button
         </Button>
         <div style={style.buffer}/>
-        <Footer/>
+        <Nav
+          isMobile={isMobile}
+        />
       </div>
     )
   }
