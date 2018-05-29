@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from '@material-ui/core/Card';
+import Button from '@material-ui/core/Button';
 
-function Component({title, image, content, children, imageProps, cardProps, isMobile}) {
+function Component({title, href, image, content, children, imageProps, cardProps, isMobile}) {
   let style
   if (isMobile) {
     style = {
@@ -43,8 +44,24 @@ function Component({title, image, content, children, imageProps, cardProps, isMo
         "maxWidth": "300px",
         "margin": "1rem",
       },
-      content: {},
-      action: {}
+      title: {
+        "fontWeight": "bold",
+        "margin": "0 1rem 1rem 1rem",
+        "display": "flex",
+        "justifyContent": "center",
+      },
+      content: {
+        "fontSize": "0.9rem",
+        "margin": "0 1rem 1rem 1rem",
+        "display": "flex",
+        "justifyContent": "center",
+      },
+      action: {
+        "margin": "0 1rem 1rem 1rem",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center"
+      }
     }
 
   }
@@ -58,14 +75,20 @@ function Component({title, image, content, children, imageProps, cardProps, isMo
         src={image}
         style={style.image}
       />
-      <h3 style={style.title}>
+      <div style={style.title}>
         {title}
-      </h3>
+      </div>
       <div style={style.content}>
         {content}
       </div>
       <div style={style.action}>
-        {children}
+        <Button
+          variant="raised"
+          color="primary"
+          href={href}
+        >
+          Click Here
+        </Button>
       </div>
     </Card>
   </div>

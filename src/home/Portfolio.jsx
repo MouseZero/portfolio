@@ -30,6 +30,7 @@ function Component(props) {
           title="Billo's Adventure"
           content="Android Game"
           isMobile={props.isMobile}
+          href="https://play.google.com/store/apps/details?id=ws.codelogic.wombat"
         />
         <MediaCard
           image={voting}
@@ -42,24 +43,28 @@ function Component(props) {
           title="Game Of Life"
           content="React JS"
           isMobile={props.isMobile}
+          href="https://codepen.io/mousezero/pen/beGMqP"
         />
         <MediaCard
           image={crawler}
           title="Dungeon Crawler"
           content="React JS, Responsive Design"
           isMobile={props.isMobile}
+          href="https://codepen.io/mousezero/pen/RRPBZr"
         />
         <MediaCard
           image={simon}
           title="Simon"
           content="HTML5 Canvas, Responsive Design"
           isMobile={props.isMobile}
+          href="https://codepen.io/mousezero/pen/vGMrgd"
         />
         <MediaCard
           image={recipe}
           title="Recipe Box"
           content="React JS, Responsive Design"
           isMobile={props.isMobile}
+          href="https://codepen.io/mousezero/pen/YqmNYL"
         />
       </div>
     </Section>
