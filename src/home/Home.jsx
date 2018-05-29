@@ -66,14 +66,7 @@ class Home extends React.Component {
           isMobile={isMobile}
         />
         <Skills/>
-        <About/>
         <Contact/>
-        <Button variant="raised" color="primary">
-          Test Button
-        </Button>
-        <Button variant="raised" color="secondary">
-          Test2 Button
-        </Button>
         <div style={style.buffer}/>
         <Nav
           isMobile={isMobile}

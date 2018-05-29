@@ -9,6 +9,10 @@ const style = {
   },
   title: {
     "fontWeight": "bold"
+  },
+  a: {
+    "color": "#c7c7c7",
+    "textDecoration": "none"
   }
 }
 
@@ -32,7 +36,7 @@ function Component(props) {
               Caught and fixed data loss issues on 3 occasions before production release.
             </li>
             <li>
-              Was able to find a bug that was stopping 30% of the user base from registering on a pears application. Some content
+              Was able to find a bug that was stopping 30% of the user base from registering on a pears application.
             </li>
           </ul>
         </div>
@@ -54,6 +58,17 @@ function Component(props) {
               Was able to quickly prototype an application in a language I was not proficient in, by working additional hours. The review was that of a perfectly working program without issue.
             </li>
           </ul>
+        </div>
+        <div style={style.dates}>
+          2016 – 2017
+        </div>
+        <div style={style.title}>
+          Frontend web development certification, Free Code Camp
+        </div>
+        <div>
+          <a style={style.a} target="_blank" href="https://www.freecodecamp.com/mousezero/front-end-certification">
+            https://www.freecodecamp.com/mousezero/front-end-certification
+          </a>
         </div>
       </div>
     </Section>
