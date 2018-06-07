@@ -36,7 +36,7 @@ function Component(props) {
               Caught and fixed data loss issues on 3 occasions before production release.
             </li>
             <li>
-              Was able to find a bug that was stopping 30% of the user base from registering on a pears application.
+              Was able to find a bug that was stopping 30% of the user base from registering on a peers application.
             </li>
           </ul>
         </div>
