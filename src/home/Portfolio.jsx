@@ -21,7 +21,7 @@ function Component(props) {
   return (
     <Section
       id="portfolio"
-      title="Portfolio"
+      title="Toy Apps"
       image={image}
     >
       <div style={style.container}>

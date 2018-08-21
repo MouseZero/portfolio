@@ -25,7 +25,20 @@ function Component(props) {
     >
       <div>
         <div style={style.dates}>
-          Jul 2017 – Present
+          Jun 2018 – Present
+        </div>
+        <div style={style.title}>
+          Full Stack Developer, studyit.app
+        </div>
+        <div>
+          <ul>
+            <li>
+              Currently creating my own product. <a href="https://studyit.app" style={{color: 'white'}}>studyit.app</a>
+            </li>
+          </ul>
+        </div>
+        <div style={style.dates}>
+          Jul 2017 – Jun 2018
         </div>
         <div style={style.title}>
           Full Stack Developer, VandePoel Productions
@@ -37,6 +50,9 @@ function Component(props) {
             </li>
             <li>
               Was able to find a bug that was stopping 30% of the user base from registering on a peers application.
+            </li>
+            <li>
+              Integrated registration operations on the Facebook Oculus Connect website
             </li>
           </ul>
         </div>
