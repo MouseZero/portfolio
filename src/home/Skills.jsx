@@ -6,14 +6,16 @@ const style = {
   content: {
     "display": "flex",
     "flex-wrap": "wrap",
-    "justisfy-content": "space-arround",
+    "justisfy-content": "center",
+    alignItems: "center",
     "margin": "2rem 0 2rem 0"
   },
   skill: {
-    "marginBottom": "2rem",
     "flex": "1",
-    "minWidth": "45%",
-    "text-align": "center"
+    "margin": "0.5rem",
+    "marginBottom": "2rem",
+    "minWidth": "10rem",
+    "text-align": "center",
   }
 }
 
@@ -25,12 +27,23 @@ function Component(props) {
       image={image}
     >
     <div style={style.content}>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>React/Redux</div>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>Vue JS/VueX</div>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>SASS/CSS</div>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>Flexbox</div>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>REST API’s</div>
-      <div style={style.skill}><i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>AWS</div>
+      <div style={style.skill}>React/Redux</div>
+      <div style={style.skill}>SASS/CSS</div>
+      <div style={style.skill}>Flexbox</div>
+      <div style={style.skill}>REST API’s</div>
+      <div style={style.skill}>Node & Express</div>
+      <div style={style.skill}>HTML5</div>
+      <div style={style.skill}>MySQL</div>
+      <div style={style.skill}>REST API’s</div>
+      <div style={style.skill}>Linux</div>
+      <div style={style.skill}>NGINX</div>
+      <div style={style.skill}>Git</div>
+      <div style={style.skill}>PHP</div>
+      <div style={style.skill}>Vue</div>
+      <div style={style.skill}>Larevel</div>
+      <div style={style.skill}>Mocha & Chai</div>
+      <div style={style.skill}>webdriver.io</div>
+      <div style={style.skill}>AWS</div>
     </div>
 
     </Section>

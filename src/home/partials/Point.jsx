@@ -9,7 +9,6 @@ const style = {
 function Point(props) {
   return (
     <div style={style.point}>
-      <i className="fas fa-angle-right fa-sm">&nbsp;&nbsp;&nbsp;</i>
       { props.children }
     </div>
   )

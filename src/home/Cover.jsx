@@ -2,6 +2,7 @@ import React from 'react'
 import Section from './partials/Section.jsx'
 import image from '../images/title-backgrounds/laptop.jpg'
 import Point from './partials/Point.jsx'
+import Button from '@material-ui/core/Button'
 
 const style = {
   content: {
@@ -22,13 +23,19 @@ function Component(props) {
     >
       <div style={style.content}>
         <Point>
-          Frontend developer with 3 years of experience
-        </Point>
-        <Point>
-          Focused on React/Redux and experienced with Vue JS.
+          Focused on React and Redux
         </Point>
         <Point>
           Conscientious about testing and preventing data loss
+        </Point>
+        <Point>
+          <Button
+            variant="raised"
+            color="primary"
+            href="/resume/resume.pdf"
+          >
+            My Resume
+          </Button>
         </Point>
       </div>
     </Section>

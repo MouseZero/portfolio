@@ -9,9 +9,11 @@ const style = {
     "margin": "2rem",
   },
   section: {
+    marginBottom: "6rem"
   },
   title: {
     "height": "25vw",
+    "maxHeight": "300px",
     "display": "flex",
     "alignItems": "center",
     "justifyContent": "center",
@@ -27,6 +29,7 @@ function Section({id, image, title, children, isMobile}) {
     <div id={id} style={style.section}>
       <Parallax
         bgImage={image}
+        blur={2}
       >
         <div style={style.title}>
           <h2 style={style.h2}>{title}</h2>
