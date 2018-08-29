@@ -55,6 +55,7 @@ function Component({title, href, image, content, children, imageProps, cardProps
         "margin": "0 1rem 1rem 1rem",
         "display": "flex",
         "justifyContent": "center",
+        minHeight: "90px"
       },
       action: {
         "margin": "0 1rem 1rem 1rem",

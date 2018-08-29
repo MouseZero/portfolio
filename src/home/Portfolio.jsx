@@ -3,6 +3,7 @@ import Section from './partials/Section.jsx'
 import MediaCard from './partials/MediaCard.jsx'
 import image from '../images/title-backgrounds/portfolio.jpg'
 import billo from '../images/project-thumbs/thumb-billo.png'
+import studyit from '../images/project-thumbs/studyit.png'
 import voting from '../images/project-thumbs/thumb-voting.png'
 import life from '../images/project-thumbs/thumb-life.png'
 import simon from '../images/project-thumbs/thumb-simon.png'
@@ -21,21 +22,22 @@ function Component(props) {
   return (
     <Section
       id="portfolio"
-      title="Toy Apps"
+      title="Shareable Works"
       image={image}
     >
       <div style={style.container}>
         <MediaCard
-          image={billo}
-          title="Billo's Adventure"
-          content="Android Game"
+          image={studyit}
+          title="Study It Flashcards"
+          content="JavaScript, React, Redux, Material Design, PWA, Service Workers, Node, Webpack,
+REST, Mongo, AWS, NGINX, Docker, Linux, Mocha, Chai, Git, webdriverReact JS, Responsive Design, "
           isMobile={props.isMobile}
-          href="https://play.google.com/store/apps/details?id=ws.codelogic.wombat"
+          href="https://studyit.app"
         />
         <MediaCard
-          image={voting}
-          title="Voting App"
-          content="React, Redux, Node, PostgreSQL, Express"
+          image={billo}
+          title="Billo's Adventure"
+          content="Down for compliance changes normally availble on the Google Play Store"
           isMobile={props.isMobile}
         />
         <MediaCard
