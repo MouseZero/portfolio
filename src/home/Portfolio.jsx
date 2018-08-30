@@ -37,8 +37,9 @@ REST, Mongo, AWS, NGINX, Docker, Linux, Mocha, Chai, Git, webdriverReact JS, Res
         <MediaCard
           image={billo}
           title="Billo's Adventure"
-          content="Down for compliance changes normally availble on the Google Play Store"
+          content="C#, Unity, Android"
           isMobile={props.isMobile}
+          href="https://play.google.com/store/apps/details?id=ws.codelogic.wombat"
         />
         <MediaCard
           image={life}
@@ -60,13 +61,6 @@ REST, Mongo, AWS, NGINX, Docker, Linux, Mocha, Chai, Git, webdriverReact JS, Res
           content="HTML5 Canvas, Responsive Design"
           isMobile={props.isMobile}
           href="https://codepen.io/mousezero/pen/vGMrgd"
-        />
-        <MediaCard
-          image={recipe}
-          title="Recipe Box"
-          content="React JS, Responsive Design"
-          isMobile={props.isMobile}
-          href="https://codepen.io/mousezero/pen/YqmNYL"
         />
       </div>
     </Section>
